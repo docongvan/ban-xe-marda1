@@ -1,0 +1,37 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="vi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Maps - GianHangVN</title>
+    <meta name="description" content="Google Maps by GianHangVN">
+    <script async="" defer="" src="https://www.google.com/maps/search/thaco+b%E1%BA%AFc+giang+b%E1%BA%AFc+giang+%C4%91%E1%BB%8Ba+ch%E1%BB%89/@21.2965168,106.2399619,16z?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D"></script>
+    <script type="text/javascript">
+        function initMap() {
+            var uluru = { lat: 21.0662122, lng: 105.8804404 };
+            var infoWindow = new google.maps.InfoWindow({
+                content: "<p style='text-align:left;font-weight:bold;'>MAZDA LONG BIÊN</p><p style='text-align:left;'>Địa chỉ: 105A Đường Lý Sơn, Ngọc Thụy, Long Biên, Hà Nội</p><p style='text-align:left;'>Điện thoại: <a href='tel:0936576385'>0936.576.385</a></p><p style='text-align:left;'>Email: <a href='mailto:showroommazdalongbien@gmail.com'>showroommazdalongbien@gmail.com</a></p>"
+            });
+            var map = new google.maps.Map(document.getElementById('map_canvas'), {
+                zoom: 16,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            infoWindow.open(map, marker);
+        }
+    </script>
+    <style>
+        p {
+            margin: 0 0 10px 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body style="margin:0;padding:0;">
+    <div id="map_canvas" style="width: 100%; height:500px;"></div>
+
+</body></html>
